@@ -5,17 +5,13 @@ on:
     branches:
       - main
   pull_request:
+  schedule:
+    - cron: '0 0 * * 0'
 
 permissions:
   actions: read
   contents: write
-  # Allows the EndBug/add-and-commit step to commit the package manager changes,
-  # adding the AppMap language library and configuration file appmap.yml.
-  # Once the EndBug/add-and-commit is removed, this permission can be removed, 
-  # unless you need it for other reasons.
   pull-requests: write
-  # Allows the getappmap/archive-action to write a PR comment with the 
-  # AppMap configuration status.
 
 jobs:
   main:
@@ -26,15 +22,9 @@ jobs:
           fetch-depth: 0
           ref: ${{ github.event.pull_request.head.ref }}
 
-      # Connect your workspace on nx.app and uncomment this to enable task distribution.
-      # The "--stop-agents-after" is optional, but allows idle agents to shut down once the "build" targets have been requested
-      # - run: pnpm exec nx-cloud start-ci-run --distribute-on="5 linux-medium-js" --stop-agents-after="build"
-
-      
       - uses: pnpm/action-setup@v2
         with:
           version: 8
-      # Cache node_modules
       - uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -42,9 +32,6 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - uses: nrwl/nx-set-shas@v4
 
-      # Begin AppMap CI language agent installation.
-      # This snippet can be safely removed once the AppMap language agent has been
-      # added to the project dependencies, and appmap.yml has been created.
       - name: Install AppMap tools
         id: install-appmap
         uses: getappmap/install-action@v1
@@ -54,7 +41,6 @@ jobs:
         uses: EndBug/add-and-commit@v9
         with:
           message: "ci: Add AppMap language agent and appmap.yml"
-      # End AppMap CI language agent installation
 
       - run: git branch --track main origin/main
         if: ${{ github.event_name == 'pull_request' }}
