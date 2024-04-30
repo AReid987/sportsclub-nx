@@ -1,14 +1,21 @@
-import { nxE2EPreset } from '@nx/cypress/plugins/cypress-preset';
+import { nxE2EPreset } from "@nx/cypress/plugins/cypress-preset";
 
-import { defineConfig } from 'cypress';
+import { defineConfig } from "cypress";
 
 export default defineConfig({
   e2e: {
     ...nxE2EPreset(__filename, {
-      cypressDir: 'src',
-      webServerCommands: { default: 'nx run client:start' },
-      ciWebServerCommand: 'nx run client:serve-static',
+      cypressDir: "src",
+      webServerCommands: { default: "nx run client:start" },
+      ciWebServerCommand: "nx run client:serve-static",
     }),
-    baseUrl: 'http://localhost:3000',
+    baseUrl: "http://localhost:3000",
+  },
+
+  component: {
+    devServer: {
+      framework: "react",
+      bundler: "webpack",
+    },
   },
 });

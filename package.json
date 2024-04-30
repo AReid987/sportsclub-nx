@@ -23,6 +23,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "3.0.2",
     "@eslint/js": "^9.1.1",
+    "@jest/globals": "^29.7.0",
     "@nestjs/schematics": "~10.1.1",
     "@nestjs/testing": "^10.3.8",
     "@nx/cypress": "19.0.0-canary.20240423-b37bfdb",
@@ -76,6 +77,7 @@
     "ts-node": "10.9.2",
     "typescript": "^5.4.5",
     "typescript-eslint": "^7.7.1",
+    "webpack": "^5.91.0",
     "webpack-cli": "^5.1.4"
   },
   "pnpm": {
