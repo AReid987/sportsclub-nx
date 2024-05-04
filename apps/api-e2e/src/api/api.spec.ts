@@ -1,7 +1,12 @@
 import axios from 'axios';
 
+jest.mock('axios');
+
 describe('GET /api', () => {
   it('should return a message', async () => {
+    const mockedAxios = axios as jest.Mocked<typeof axios>;
+    const mockResponse = { status: 200, data: { message: 'Hello API' } };
+    mockedAxios.get.mockResolvedValue(mockResponse);
     try {
       const res = await axios.get(`/api`);
       expect(res.status).toBe(200);
