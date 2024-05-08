@@ -75,7 +75,7 @@ devDependencies:
     version: 10.3.8(@nestjs/common@10.3.8)(@nestjs/core@10.3.8)(@nestjs/platform-express@10.3.8)
   '@nx/cypress':
     specifier: 19.0.0-canary.20240423-b37bfdb
-    version: 19.0.0-canary.20240423-b37bfdb(@swc-node/register@1.9.1)(@swc/core@1.5.3)(@types/node@20.12.8)(cypress@13.8.1)(nx@19.0.0-canary.20240423-b37bfdb)(typescript@5.4.5)
+    version: 19.0.0-canary.20240423-b37bfdb(@swc-node/register@1.9.1)(@swc/core@1.5.3)(@types/node@20.12.8)(cypress@13.9.0)(nx@19.0.0-canary.20240423-b37bfdb)(typescript@5.4.5)
   '@nx/eslint':
     specifier: 19.0.0-canary.20240423-b37bfdb
     version: 19.0.0-canary.20240423-b37bfdb(@swc-node/register@1.9.1)(@swc/core@1.5.3)(@types/node@20.12.8)(nx@19.0.0-canary.20240423-b37bfdb)
@@ -153,7 +153,7 @@ devDependencies:
     version: 29.7.0(@babel/core@7.24.5)
   cypress:
     specifier: ^13.8.1
-    version: 13.8.1
+    version: 13.9.0
   eslint-config-love:
     specifier: ^47.0.0
     version: 47.0.0(@typescript-eslint/eslint-plugin@7.8.0)(eslint-plugin-import@2.29.1)(eslint-plugin-n@17.4.0)(eslint-plugin-promise@6.1.1)(eslint@9.2.0)(typescript@5.4.5)
@@ -2188,10 +2188,10 @@ packages:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.17.1
 
-  /@nrwl/cypress@19.0.0-canary.20240423-b37bfdb(@swc-node/register@1.9.1)(@swc/core@1.5.3)(@types/node@20.12.8)(cypress@13.8.1)(nx@19.0.0-canary.20240423-b37bfdb)(typescript@5.4.5):
+  /@nrwl/cypress@19.0.0-canary.20240423-b37bfdb(@swc-node/register@1.9.1)(@swc/core@1.5.3)(@types/node@20.12.8)(cypress@13.9.0)(nx@19.0.0-canary.20240423-b37bfdb)(typescript@5.4.5):
     resolution: {integrity: sha512-vdQViRbIc0EQnhh93NVb9psXosrmka01LShWBSNB5NUkWvdOxMw3Xp+fsxPEAgzncrKwdzBqUFvYkkdHi0ZjEA==}
     dependencies:
-      '@nx/cypress': 19.0.0-canary.20240423-b37bfdb(@swc-node/register@1.9.1)(@swc/core@1.5.3)(@types/node@20.12.8)(cypress@13.8.1)(nx@19.0.0-canary.20240423-b37bfdb)(typescript@5.4.5)
+      '@nx/cypress': 19.0.0-canary.20240423-b37bfdb(@swc-node/register@1.9.1)(@swc/core@1.5.3)(@types/node@20.12.8)(cypress@13.9.0)(nx@19.0.0-canary.20240423-b37bfdb)(typescript@5.4.5)
     transitivePeerDependencies:
       - '@babel/traverse'
       - '@swc-node/register'
@@ -2448,7 +2448,7 @@ packages:
     transitivePeerDependencies:
       - encoding
 
-  /@nx/cypress@19.0.0-canary.20240423-b37bfdb(@swc-node/register@1.9.1)(@swc/core@1.5.3)(@types/node@20.12.8)(cypress@13.8.1)(nx@19.0.0-canary.20240423-b37bfdb)(typescript@5.4.5):
+  /@nx/cypress@19.0.0-canary.20240423-b37bfdb(@swc-node/register@1.9.1)(@swc/core@1.5.3)(@types/node@20.12.8)(cypress@13.9.0)(nx@19.0.0-canary.20240423-b37bfdb)(typescript@5.4.5):
     resolution: {integrity: sha512-2LoNLG6InKvPUEUAmoHFRm4MMWCQpC1awj8JazUTSb5Ld1amgoZqojX/9OaAvqsLLDzYb5uiZxgXIq99nXzLZQ==}
     peerDependencies:
       cypress: '>= 3 < 14'
@@ -2456,12 +2456,12 @@ packages:
       cypress:
         optional: true
     dependencies:
-      '@nrwl/cypress': 19.0.0-canary.20240423-b37bfdb(@swc-node/register@1.9.1)(@swc/core@1.5.3)(@types/node@20.12.8)(cypress@13.8.1)(nx@19.0.0-canary.20240423-b37bfdb)(typescript@5.4.5)
+      '@nrwl/cypress': 19.0.0-canary.20240423-b37bfdb(@swc-node/register@1.9.1)(@swc/core@1.5.3)(@types/node@20.12.8)(cypress@13.9.0)(nx@19.0.0-canary.20240423-b37bfdb)(typescript@5.4.5)
       '@nx/devkit': 19.0.0-canary.20240423-b37bfdb(nx@19.0.0-canary.20240423-b37bfdb)
       '@nx/eslint': 19.0.0-canary.20240423-b37bfdb(@swc-node/register@1.9.1)(@swc/core@1.5.3)(@types/node@20.12.8)(nx@19.0.0-canary.20240423-b37bfdb)
       '@nx/js': 19.0.0-canary.20240423-b37bfdb(@swc-node/register@1.9.1)(@swc/core@1.5.3)(@types/node@20.12.8)(nx@19.0.0-canary.20240423-b37bfdb)(typescript@5.4.5)
       '@phenomnomnominal/tsquery': 5.0.1(typescript@5.4.5)
-      cypress: 13.8.1
+      cypress: 13.9.0
       detect-port: 1.5.1
       semver: 7.6.0
       tslib: 2.6.2
@@ -3842,7 +3842,7 @@ packages:
       globby: 11.1.0
       is-glob: 4.0.3
       minimatch: 9.0.3
-      semver: 7.6.0
+      semver: 7.6.1
       ts-api-utils: 1.3.0(typescript@5.4.5)
       typescript: 5.4.5
     transitivePeerDependencies:
@@ -5490,8 +5490,8 @@ packages:
     resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
     dev: true
 
-  /cypress@13.8.1:
-    resolution: {integrity: sha512-Uk6ovhRbTg6FmXjeZW/TkbRM07KPtvM5gah1BIMp4Y2s+i/NMxgaLw0+PbYTOdw1+egE0FP3mWRiGcRkjjmhzA==}
+  /cypress@13.9.0:
+    resolution: {integrity: sha512-atNjmYfHsvTuCaxTxLZr9xGoHz53LLui3266WWxXJHY7+N6OdwJdg/feEa3T+buez9dmUXHT1izCOklqG82uCQ==}
     engines: {node: ^16.0.0 || ^18.0.0 || >=20.0.0}
     hasBin: true
     requiresBuild: true
@@ -5533,7 +5533,7 @@ packages:
       process: 0.11.10
       proxy-from-env: 1.0.0
       request-progress: 3.0.0
-      semver: 7.6.0
+      semver: 7.6.1
       supports-color: 8.1.1
       tmp: 0.2.3
       untildify: 4.0.0
@@ -8936,7 +8936,7 @@ packages:
     resolution: {integrity: sha512-hXdUTZYIVOt1Ex//jAQi+wTZZpUpwBj/0QsOzqegb3rGMMeJiSEu5xLHnYfBrRV4RH2+OCSOO95Is/7x1WJ4bw==}
     engines: {node: '>=10'}
     dependencies:
-      semver: 7.6.0
+      semver: 7.6.1
 
   /make-error@1.3.6:
     resolution: {integrity: sha512-s8UhlNe7vPKomQhC1qFelMokr/Sc3AgNbso3n74mVPA5LTZwkB9NlXf4XPamLxJE8h0gh73rM94xvwRT2CVInw==}
@@ -10781,6 +10781,11 @@ packages:
     hasBin: true
     dependencies:
       lru-cache: 6.0.0
+
+  /semver@7.6.1:
+    resolution: {integrity: sha512-f/vbBsu+fOiYt+lmwZV0rVwJScl46HppnOA1ZvIuBWKOTlllpyJ3bfVax76/OrhCH38dyxoDIA8K7uB963IYgA==}
+    engines: {node: '>=10'}
+    hasBin: true
 
   /send@0.18.0:
     resolution: {integrity: sha512-qqWzuOjSFOuqPjFe4NOsMLafToQQwBSOEpS+FwEt3A2V3vKubTquT3vmLTQpFgMXp8AlFWFuP1qKaJZOtPpVXg==}
